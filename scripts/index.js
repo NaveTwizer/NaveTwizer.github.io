@@ -9,6 +9,9 @@ document.addEventListener('DOMContentLoaded', () => {
     if (sessionStorage.getItem('gallery') && sessionStorage.getItem('timeline') && sessionStorage.getItem('games')) {
         hiddenDiv.style.display = 'flex';
     }
+    else {
+        console.log('Not yet.');
+    }
     [galleryDiv, timelineDiv, gamesDiv].forEach(div => {
         div.addEventListener('click', () => {
             sessionStorage.setItem(`${div.id}`, 'true');
