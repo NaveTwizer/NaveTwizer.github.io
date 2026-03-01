@@ -1,0 +1,102 @@
+<<<<<<< HEAD
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+
+#intro {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right, black, #111);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 1s ease;
+    z-index: 10;
+}
+#intro h1 {
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+
+#intro button {
+    padding: 12px 30px;
+    font-size: 18px;
+    border: none;
+    background: #ffcc00;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+#intro button:hover {
+    transform: scale(1.1);
+}
+
+
+#home {
+    opacity: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*background: linear-gradient(to right, yellow, black 70%);*/
+    color: white;
+    font-size: 40px;
+    transition: opacity 1.5s ease;
+=======
+body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        overflow: hidden;
+}
+
+#intro {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right, black, #111);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 1s ease;
+    z-index: 10;
+}
+#intro h1 {
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+
+#intro button {
+    padding: 12px 30px;
+    font-size: 18px;
+    border: none;
+    background: #ffcc00;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+#intro button:hover {
+    transform: scale(1.1);
+}
+
+
+#home {
+    opacity: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*background: linear-gradient(to right, yellow, black 70%);*/
+    color: white;
+    font-size: 40px;
+    transition: opacity 1.5s ease;
+>>>>>>> 035d15ee128b462cffa96a9d15fcb72f45cf3423
+}
