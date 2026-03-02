@@ -1,37 +1,48 @@
 body {
+    margin: 0;
+    min-height: 100vh;
     background-image: linear-gradient(to right, yellow, black 75%);
     font-family: sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 #contentMenu {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     display: flex;
     flex-direction: column;
     gap: 20px;
     text-align: center;
+    padding: 20px;
+    width: 90%;
+    max-width: 500px;
 }
 
 .item {
-    padding: 20px 60px;
+    padding: 20px;
     font-size: 22px;
     background: white;
     border-radius: 15px;
-    text-align: center;
     cursor: pointer;
     transition: 0.3s ease;
 }
+
 .item a {
     text-decoration: none;
+    color: purple;
+    display: block;
 }
+
 .item:hover {
     transform: scale(1.05);
     background: black;
+}
+
+.item:hover a {
     color: white;
     text-decoration: underline;
 }
-
 
 #confettiCanvas {
     position: fixed;
@@ -39,9 +50,10 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    pointer-events: none; /* so it doesn’t block clicks */
+    pointer-events: none;
     z-index: 9999;
 }
+
 #hiddenDiv {
     display: none;
 }
